@@ -1,4 +1,4 @@
-# Your Budget App
+# Your Budget Website
 
 A web application designed to help users track their personal finances by managing income and expenses. The app provides a user-friendly interface and supports both light and dark themes, allowing for a personalized experience.
 
