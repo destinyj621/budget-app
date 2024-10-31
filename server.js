@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public')); // Serve static files from 'public' directory
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://destinyj621:Janiyah621!@budgetapp.mp4sl.mongodb.net/', {
+mongoose.connect('mongodb+srv://<username>:<password>@<cluster-url>/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
