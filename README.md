@@ -8,7 +8,6 @@ A web application designed to help users track their personal finances by managi
 - [Features](#features)
 - [Features to Be Added](#features-to-be-added)
 - [Technologies Used](#technologies-used)
-- [Code Structure](#code-structure)
 
 ## Overview
 
