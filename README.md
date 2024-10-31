@@ -32,6 +32,7 @@ This budget app allows users to:
 - **Search Functionality**: Enable users to search for specific transactions by name, category, or date.
 - **Budgeting Tools**: Implement features for setting and tracking budgets against expenses.
 - **User Authentication**: Add user login and registration for a personalized experience.
+- **Filter and Sort**: Allow users to filter and sort their transaction history.
 
 ## Technologies Used
 
