@@ -1,0 +1,11 @@
+<h1>Dashboard</h1>
+<p>Total Income: <%= totalIncome %></p>
+<p>Total Expenses: <%= totalExpenses %></p>
+<h2>Recent Transactions</h2>
+<ul>
+    <% transactions.slice(-10).forEach(transaction => { %>
+        <li>
+            <%= transaction.name %> - <%= transaction.amount %> - <%= transaction.type %> - <%= transaction.category %> - <%= transaction.date.toDateString() %>
+        </li>
+    <% }) %>
+</ul>

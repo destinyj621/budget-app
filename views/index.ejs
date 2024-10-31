@@ -1,0 +1,35 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Budget App</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Ensure the path is correct -->
+</head>
+<body>
+    <%- include('navbar') %> <!-- Include the navbar -->
+    
+    <h2>Your Recent Transactions</h2>
+    <ul>
+        <% transactions.forEach(transaction => { %>
+            <li><%= transaction.name %> - $<%= transaction.amount %> on <%= transaction.date.toLocaleDateString() %></li>
+        <% }) %>
+    </ul>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark'); // Toggle the dark class
+            
+            // Change the button text based on the current theme
+            const toggleButton = document.getElementById('theme-toggle');
+            if (body.classList.contains('dark')) {
+                toggleButton.textContent = 'Toggle Theme';
+            } else {
+                toggleButton.textContent = 'Toggle Theme';
+            }
+        }
+    </script>
+</body>
+</html>

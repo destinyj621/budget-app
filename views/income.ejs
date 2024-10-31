@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <%- include('header'); %> <!-- Include the header -->
+    <div class="container">
+        <h1>Income</h1>
+        <a href="/add-income" class="button">Add Income</a>
+        <ul class="expense-list">
+            <% incomes.forEach(income => { %>
+                <li class="expense-item">
+                    <%= income.name %> - $<%= income.amount.toFixed(2) %>
+                </li>
+            <% }) %>
+        </ul>
+        <a href="/" class="button">Back to Expenses</a>
+    </div>
+</body>
+</html>
